@@ -7,9 +7,15 @@ target 'Movie' do
 
   # Pods for Movie
 	pod "Gemini"
-	pod 'Alamofire'
-	pod 'SDWebImage'
 	pod 'MarqueeLabel'
+	pod 'SDWebImage'
 	pod 'YouTubePlayer'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
+	pod 'Firebase/Storage'
+	pod 'Firebase/Analytics'
+	pod 'Alamofire','~>4.7.3'
+
+  
 
 end

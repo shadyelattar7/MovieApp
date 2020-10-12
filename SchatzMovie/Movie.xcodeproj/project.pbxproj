@@ -36,6 +36,7 @@
 		042014BD2327ADB90004183D /* WatchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042014BB2327ADB90004183D /* WatchListCell.xib */; };
 		042014BF2327AFB80004183D /* WatchListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042014BE2327AFB80004183D /* WatchListVC.swift */; };
 		04B9F8BA2420E2250007FDB0 /* CharacterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9F8B92420E2250007FDB0 /* CharacterFlowLayout.swift */; };
+		171D33902533E4D00065DB1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 171D338F2533E4D00065DB1C /* GoogleService-Info.plist */; };
 		A4E7BB0EEFC8A29A116A9695 /* Pods_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB179C2B73A2F9103F4FE7F /* Pods_Movie.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		042014BB2327ADB90004183D /* WatchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListCell.xib; sourceTree = "<group>"; };
 		042014BE2327AFB80004183D /* WatchListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListVC.swift; sourceTree = "<group>"; };
 		04B9F8B92420E2250007FDB0 /* CharacterFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterFlowLayout.swift; sourceTree = "<group>"; };
+		171D338F2533E4D00065DB1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1D5708CB2996055C27992C61 /* Pods-Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie.release.xcconfig"; path = "Target Support Files/Pods-Movie/Pods-Movie.release.xcconfig"; sourceTree = "<group>"; };
 		7DB179C2B73A2F9103F4FE7F /* Pods_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B64F5958285DD2A5120BC8 /* Pods-Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie.debug.xcconfig"; path = "Target Support Files/Pods-Movie/Pods-Movie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +119,9 @@
 				041138F4230DE97B007D52D4 /* Utilities */,
 				041138F1230DE45F007D52D4 /* Extentions */,
 				041138DD230DCBB0007D52D4 /* Assets.xcassets */,
+				041138D3230DCBAF007D52D4 /* AppDelegate.swift */,
 				041138E2230DCBB0007D52D4 /* Info.plist */,
+				171D338F2533E4D00065DB1C /* GoogleService-Info.plist */,
 				041138DA230DCBAF007D52D4 /* Movie.xcdatamodeld */,
 			);
 			path = Movie;
@@ -126,7 +130,7 @@
 		041138EA230DD458007D52D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				041138D3230DCBAF007D52D4 /* AppDelegate.swift */,
+				1718932B2533E12800F2E4E8 /* Auth */,
 				041138D5230DCBAF007D52D4 /* HomeVC.swift */,
 				041138E8230DD451007D52D4 /* HomeCVCell.swift */,
 				04B9F8B92420E2250007FDB0 /* CharacterFlowLayout.swift */,
@@ -138,8 +142,6 @@
 				0410AA7B23100F24000313E9 /* SmallDetailsVC.swift */,
 				0410AA7D23100F4B000313E9 /* ReminderVC.swift */,
 				042014BE2327AFB80004183D /* WatchListVC.swift */,
-				04130B6D232F810A003568C4 /* SignInVC.swift */,
-				04130B6F232F8120003568C4 /* SignUpVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +208,15 @@
 				7DB179C2B73A2F9103F4FE7F /* Pods_Movie.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1718932B2533E12800F2E4E8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				04130B6D232F810A003568C4 /* SignInVC.swift */,
+				04130B6F232F8120003568C4 /* SignUpVC.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		ECDF588CFDB70770D2E790F4 /* Pods */ = {
@@ -279,6 +290,7 @@
 			files = (
 				041138E1230DCBB0007D52D4 /* LaunchScreen.storyboard in Resources */,
 				042014BD2327ADB90004183D /* WatchListCell.xib in Resources */,
+				171D33902533E4D00065DB1C /* GoogleService-Info.plist in Resources */,
 				041138DE230DCBB0007D52D4 /* Assets.xcassets in Resources */,
 				041138D9230DCBAF007D52D4 /* Main.storyboard in Resources */,
 			);
@@ -504,7 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VF3GJMAS42;
+				DEVELOPMENT_TEAM = 9QGUZ29PBZ;
 				INFOPLIST_FILE = Movie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,7 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VF3GJMAS42;
+				DEVELOPMENT_TEAM = 9QGUZ29PBZ;
 				INFOPLIST_FILE = Movie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
